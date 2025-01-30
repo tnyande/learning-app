@@ -1,11 +1,16 @@
 
-import Navbar from "@/components/sections/navbar/default";
-import Image from "next/image";
+import Navbar from "@/components/navbar";
+import './globals.css'
+import Hero from "@/components/hero";
 
 
 export default function Home() {
-  return <Navbar />
-
-
+  return (
+    <div>
+  
+        <Navbar />
+        <Hero />
+  </div>
+  )
   
 }

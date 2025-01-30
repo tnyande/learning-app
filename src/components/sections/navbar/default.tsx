@@ -6,15 +6,16 @@ import {
   NavbarRight,
 } from "../../ui/navbar";
 
-import LaunchUI from "../../logos/launch-ui";
+import azubiLogo from "learning-app/src/components/logos/azubi-logo.svg";
 import Hero2 from "@/components/Hero2.svg";
+import LaunchUI from "@/components/logos/launch-ui";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 -mb-4 px-4 pb-4">
       <div className="fade-bottom absolute left-0 h-24 w-full bg-background/15 backdrop-blur-lg"></div>
       <div className="relative mx-auto max-w-container">
-        <NavbarComponent>
+       {/* <NavbarComponent> */}
           <NavbarLeft>
             <a
               href="/"
@@ -27,20 +28,20 @@ export default function Navbar() {
               href="/"
               className="flex items-center gap-2 text-xl font-bold"
             >
-              <LaunchUI />
+             
               Home
             </a>
             <a
-              href="/"
+              href="/course"
               className="flex items-center gap-2 text-xl font-bold"
             >
-              <LaunchUI />
+             
               Course
             </a>
             <Navigation />
           </NavbarLeft>
           <NavbarRight>
-            <a href="/" className="hidden text-sm md:block">
+            <a href="/signin" className="hidden text-sm md:block">
               Sign in
             </a>
             {/*
@@ -51,7 +52,8 @@ export default function Navbar() {
 
            
           </NavbarRight>
-        </NavbarComponent>
+        
+        {/* </NavbarComponent> */}
       </div>
     </header>
   );
