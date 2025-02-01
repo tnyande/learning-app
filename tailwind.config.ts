@@ -10,6 +10,7 @@ export default {
   theme: {
   	extend: {
   		colors: {
+			'surface-action': 'var(--surface-action, #01589A)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
