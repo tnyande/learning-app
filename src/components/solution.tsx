@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 
 export const products = [
     {
@@ -18,7 +19,7 @@ export const products = [
 
     },
     {
-        id:2,
+        id:3,
         title:'Cloud Computing Expertise' ,
         desc:'Gain hands-on experience in cloud architecture and deployment, preparing you to design, implement, and manage scalable cloud solutions in the real world.',
         price:300,
@@ -28,37 +29,41 @@ export const products = [
 ]
 
 function solution() {
-  return (
-    <div className="bg-white">
-      
-        
+    return (
+        <div className="max-w-7xl mx-auto px-6 py-12 w-1061
+            h-362.67 gap-x-4 ml-56
+        ">
+            <div>
+                <h1 className='text-center mb-12'>
+                Our solutions
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-          {products.map((product) => (
-            <div key={product.id} className="group relative ml-40">
-              <img
-                alt={product.title}
-                src={product.imageSrc}
-                className="w-10 h-10 aspect-square  rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-              />
-               <h2 className="text-2xl font-bold tracking-tight text-gray-900">{product.title}</h2>
-              <div className="mt-4 flex justify-between">
-                <div>
-                  <h3 className="text-sm text-gray-500">
-                    {product.desc}
-                  </h3>
-                
-                </div>
-                <p className="text-sm font-medium text-gray-900">{product.price}</p>
-              </div>
+
+                </h1>
+                <h3 className='text-center mb-28 text-sm'>
+                Create your account quickly with just your email or 
+                social media login, then explore a wide range 
+                </h3>
             </div>
-          ))}
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4">
+            {products.map((product) => (
+              <div key={product.id} className=" bg-white p-6 rounded-lg shadow-lg">
+                <div className="relative w-10 h-10">
+                  <Image
+                    src={product.imageSrc}
+                    alt={product.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
+                  />
+                </div>
+                <h3 className="mt-4 text-sm font-bold">{product.title}</h3>
+                <p className="mt-2 text-sm text-black-600">{product.desc}</p>
+                <p className="mt-4 text-sm font-bold text-black-500">Price: ${product.price}</p>
+              </div>
+            ))}
+          </div>
         </div>
-    </div>
-    
-        
-    
-  )
+      );
 }
 
 export default solution
