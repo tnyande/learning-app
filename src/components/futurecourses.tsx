@@ -19,7 +19,7 @@ function futurecourses() {
             </p>
     
             {/* Row 3: Buttons */}
-            <div className="grid grid-cols-6 gap-4 border-1">
+            <div className="grid grid-cols-6 gap-4 border-1 w-384.5 h-168">
               {buttons.slice(0, 6).map((button, index) => (
                 <button
                   key={index}
@@ -29,7 +29,7 @@ function futurecourses() {
                 </button>
               ))}
             </div>
-            <div className="grid grid-cols-6 gap-4">
+            <div className="grid grid-cols-6 gap-4 w-769 h-168">
               {buttons.slice(6, 12).map((button, index) => (
                 <button
                   key={index}
