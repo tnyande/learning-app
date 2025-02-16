@@ -24,12 +24,7 @@ const Navbar = () => {
          {/* Navigation Links */}
 
         
-            <Link href="/" className="mr-4 mt-2 text-lg hover:text-black-400 text-black">
-                Home
-            </Link>
-            <Link href="/courses" className="mr-4 mt-2 text-lg hover:text-black-400 text-black">
-            Courses
-            </Link>
+            
         </div>
 
        
@@ -40,7 +35,7 @@ const Navbar = () => {
           <Link href="/signin" className="text-lg hover:text-gray-400 text-black">
           <Image
                 className='border-1 mr-6'
-                src="/button.svg" // path relative to the public folder
+                src="/profile.svg" // path relative to the public folder
                 alt="Logo"
                 width={125} // width of the logo
                 height={48} // height of the logo

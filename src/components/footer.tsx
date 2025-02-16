@@ -35,13 +35,17 @@ export default function Footer() {
         </div>
   
         {/* Line separator */}
-        <div className="border-t border-white my-6 mx-auto w-full "></div>
+        <div className="border-t border-white my-6 mx-auto w-5/6 "></div>
   
         {/* Copyright */}
-        <div className="text-center text-sm flex  justify-between items-center ">
+        <div className="pl-10 mx-16 pr-12 text-center text-sm flex  justify-between items-center ">
           
           <p>&copy; copyright 2025 - G-client, All rights reserved</p>
-          <p>Back to top</p>
+          <div className="flex">
+          <p >Back to top</p>
+          <img src="/arrow-up.svg" alt="arrow" className="ml-1 w-4 h-4 mb-4"/>
+          </div>
+          
         </div>
       </footer>
     );

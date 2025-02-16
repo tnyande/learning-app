@@ -6,7 +6,7 @@ function futurecourses() {
         'Python', 'Excel', 'Tableau', 'AWS', 'Azure'
       ];
     return (
-        <div className="max-w-7xl mx-auto px-6 py-12 w-1440 h-365 bg-[#01589A] text-white
+        <div className="w-full mx-auto px-6 py-12 w-1440 h-365 bg-[#01589A] text-white
 ">
           <div className=" p-6 rounded-lg shadow-lg space-y-6 ">
             {/* Row 1: Heading */}

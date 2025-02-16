@@ -3,7 +3,7 @@ import Image from 'next/image';
 const RegisterPage = () => {
   return (
     <div className=" min-h-screen flex ">
-      <div className="grid grid-cols-2 md:grid-cols-2 gap-0">
+      <div className="pl-12 grid grid-cols-2 md:grid-cols-2 gap-0">
         {/* First Column: Image */}
 
         
@@ -24,20 +24,20 @@ const RegisterPage = () => {
             
 
             {/* Second Column: Title and Text Content */}
-            <div className="ml-8 pr-8 mr-8 grid grid-col-3 pl-16 mt-8  py-16 mt-16 w-266 h-416">
+            <div className="mr-16 ml-8 pr-16 grid grid-col-3 pl-16 mt-8  py-16 mt-16 w-266 h-416">
                 <div className='pr-8 mr-8'>
                     <h3 className="text-xl font-semibold">Sign Up and Choose Your Course</h3>
                     <p className="text-gray-600">Create your account quickly with 
                         just your email or social media 
                         login, then explore a wide range </p>
                 </div>
-                <div>
+                <div className='pr-8 mr-8'>
                     <h3 className="text-xl font-semibold">Onboarding</h3>
                     <p className="text-gray-600">Create your account quickly with 
                         just your email or social media 
                         login, then explore a wide range </p>
                 </div>
-                <div>
+                <div className='pr-8 mr-8'>
                     <h3 className="text-xl font-semibold">Start Learning</h3>
                     <p className="text-gray-600">Create your account quickly with 
                         just your email or social media 
@@ -45,13 +45,13 @@ const RegisterPage = () => {
                 </div>
                 
             </div>
-            </div>
+          </div>
         
 
         {/* Third Column: Registration Form */}
-        <div className=" flex flex-col justify-right px-0">
-        <h3 className="mt-2 text-2xl font-semibold mb-6 text-black text-center">Register</h3>
-          <form className="space-y-4">
+        <div className="w-5/6 space-x-8 mr-8 flex flex-col justify-right px-0">
+        <h3 className="space-x-8 mr-8 mt-1 text-2xl font-semibold mb-6 text-black text-center">Register</h3>
+          <form className="space-y-4 space-x-0 mr-8">
             {/* Input Fields */}
             <div className="grid grid-cols-2 gap-4">
               <input
@@ -102,22 +102,35 @@ const RegisterPage = () => {
             </div>
   
             {/* Full-width Input Field */}
+            <div className='mr-8'>
             <input
                 type="file"
                 placeholder="Upload Image"
-                className="border p-2 w-full bg-[#F5F5F5]"
+                className="border  p-2  w-full bg-[#F5F5F5]"
               />
 
-<input
+            </div>
+
+            <div>
+            <input
                 type="text"
                 placeholder="Amount"
-                className="border p-2 w-full bg-[#F5F5F5]"
+                className="space-x-8 mr-8 border p-2 w-full bg-[#F5F5F5]"
               />
-            
+
+          
+           
+            </div>
+
+            <div>
             <textarea
               placeholder="Additional Comments"
-              className="border p-2 w-full h-32 bg-[#F5F5F5]"
+              className="space-x-8 mr-8 border p-2 w-full h-32 bg-[#F5F5F5]"
             ></textarea>
+            </div>
+            
+
+            
   
             {/* Submit Button */}
             <button
