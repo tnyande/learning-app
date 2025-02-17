@@ -69,27 +69,30 @@ function Content() {
                         PowerBI
                     </p>
                 </div>
-                <div className='flex flex-row w-[424px] h-[48px] gap-2 ml-64 pl-2 my-12'>
-                    <p className='inline w-[168px] h-[48px] border-1 bg-[#E6E6E6]  border-gray-400 py-1  text-black px-2'>
-                        Home
+                <div className='flex flex-row w-[424px] h-[48px] gap-2 cursor-pointer ml-64 pl-2 my-12'>
+                    <div className='pt-2 inline w-[168px] h-[48px] border-1 bg-[#E6E6E6]  border-gray-400 py-1  text-black px-2'>
+                        <h6 className='inline ml-8'>Home</h6>
                         <Image 
                           src={"/Chevron-Right.svg"}
                           alt='arrow'
                           width={22}
                           height={22}
-                          className='inline'
+                          className='inline ml-2'
                          />
-                    </p>
-                    <p className='inline w-[232px] h-[48px] border-1 bg-[#01589A] border-gray-400 py-1  text-white px-2'>
-                        Start New Application
+                    </div>
+                    <div className='pt-2 inline w-[232px] h-[48px] cursor-pointer border-1 bg-[#01589A] border-gray-400 py-1  text-white px-2'>
+                        <Link href={"/application"}>
+                        <h6 className='inline ml-8'>Start New Application</h6>
                         <Image 
                           src={"/Chevron-Right.svg"}
                           alt='arrow'
                           width={22}
                           height={22}
-                          className='inline'
+                          className='inline '
                          />
-                    </p>
+                        </Link>
+                        
+                    </div>
 
                 </div>
        
