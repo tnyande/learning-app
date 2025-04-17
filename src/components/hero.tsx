@@ -37,7 +37,7 @@ const Hero = () => {
                     <button className=" 
                     text-white text-lg b-bold border-1 ml-20
                     py-3 px-6 border-white w-137 h-38 cursor: pointer">
-                        Order Now
+                        Get Started
                     </button>
                 </div>
 

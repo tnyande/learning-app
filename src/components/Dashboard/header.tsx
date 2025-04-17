@@ -26,7 +26,7 @@ function header() {
         
         
        </div>
-       <div className='grid md:grid-cols-2 lg:grid-cols-4 grid-col-4 gap-4 absolute  mt-48 ml-16 w-[1032px] h-[160px]'>
+       <div className='grid md:grid-cols-2 lg:grid-cols-4 grid-col-4 gap-4 absolute pr-10  mt-48 ml-16 w-[1032px] h-[160px]'>
           
 
           
@@ -35,7 +35,7 @@ function header() {
                               
                               <LucideBanknote className=' mt-6 ml-20  item-center absolute w-[24px] h-[24px]' />
                               
-                              <h3 className=" mt-4 text-center text-sm font-bold">title</h3>
+                              <h3 className=" mt-4 mr-16 text-right text-sm font-bold">Collected</h3>
                               
                               <div className="mt-2 ml-2 w-[220px] h-[96px] text-center  bg-white text-sm text-black-600">
                                   <p className="pt-10">description </p>
@@ -44,7 +44,7 @@ function header() {
 
                         <div className=" bg-blue-200  w-[240px] h-[160px] rounded-lg shadow-lg">
                           <LucideClock className=' mt-6 ml-20  item-center absolute w-[24px] h-[24px]' />
-                          <h3 className="mt-4 text-center text-sm font-bold">title</h3>
+                          <h3 className="mt-4 mr-16 text-right text-sm font-bold">Pending</h3>
                           <div className="mt-2 ml-2 w-[220px] h-[96px] text-center  bg-white text-sm text-black-600">
                               <p className="pt-10">description </p>
                           </div>
@@ -52,7 +52,7 @@ function header() {
 
                     <div className=" bg-blue-200  w-[240px] h-[160px] rounded-lg shadow-lg">
                             <LucideFileText className=' mt-6 ml-20  item-center absolute w-[24px] h-[24px]' />
-                          <h3 className="mt-4 text-center text-sm font-bold">title</h3>
+                          <h3 className="mt-4 mr-8 text-right text-sm font-bold">Total Invoices</h3>
                           <div className="mt-2 ml-2 w-[220px] h-[96px] text-center  bg-white text-sm text-black-600">
                               <p className="pt-10">description </p>
                           </div>
@@ -60,7 +60,7 @@ function header() {
 
                     <div className=" bg-blue-200  w-[240px] h-[160px] rounded-lg shadow-lg">
                             <LucideUsers2 className=' mt-6 ml-20  item-center absolute w-[24px] h-[24px]' />
-                          <h3 className="mt-4 text-center text-sm font-bold">title</h3>
+                          <h3 className="mt-4 mr-8 text-right text-sm font-bold">Total Learners</h3>
                           <div className="mt-2 ml-2 w-[220px] h-[96px] text-center  bg-white text-sm text-black-600">
                               <p className="pt-10">description </p>
                           </div>

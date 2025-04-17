@@ -22,6 +22,14 @@ function sidebar() {
             </Link>
         </div>
         <div>
+            <Link href='/invoices' className='no-underline'>
+                <div className='flex mt-[16px]  text-white ml-[8px] w-[264px] h-[40px] cursor-pointer hover:bg-gray-200 gap-4'>
+                    <LucideFileText />
+                    <h6 className='no-underline'>Invoices</h6>
+                </div>
+            </Link>
+        </div>
+        <div>
             <Link href='/learners' className='no-underline'>
                 <div className='flex mt-[16px]  text-white ml-[8px] w-[264px] h-[40px] cursor-pointer hover:bg-gray-200 gap-4'>
                     <LucideFileText />

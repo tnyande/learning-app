@@ -1,6 +1,8 @@
 import Link from 'next/link';
 //import Logo from 'learning-app/public/azubi-logo.svg';
 import Image from 'next/image';
+import { SignInButton,UserButton,SignedIn, SignedOut} from '@clerk/nextjs';
+import {  } from '@clerk/nextjs';
 
 const Navbar = () => {
   return (
@@ -36,19 +38,47 @@ const Navbar = () => {
         
 
         {/* Right: Sign In Link */}
-        <div className="flex-shrink-0 pr-16 mr-4">
-          <Link href="/signin" className="text-lg hover:text-gray-400 text-black">
+        {/*
+        <SignInButton>
+          <button>Login</button>
+        </SignInButton>
+
+        <SignInButton  mode="modal"/>
+        */}
+
+        <div className="flex-shrink-0 pr-1 mr-2">
+          <SignedOut>
+          <div className='flex inline-flex'>
+
+          
+          <Link href="https://distinct-gorilla-96.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2F" 
+          target='_blank'
+          className="text-lg hover:text-gray-400 text-black">
+          
           <Image
-                className='border-1 mr-6'
+                className='border-1 mr-2'
                 src="/button.svg" // path relative to the public folder
                 alt="Logo"
                 width={125} // width of the logo
                 height={48} // height of the logo
 
                 />
+                
           
           </Link>
+          </div>
+          </SignedOut>
+
+          <SignedIn>
+          <button className='flex inline-flex  pt-8 h-[48px]'>
+            <UserButton />
+          </button>
+          </SignedIn>
+          
         </div>
+        
+        
+        
       </div>
     </header>
   );

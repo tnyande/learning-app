@@ -135,7 +135,7 @@ const RegisterPage = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="bg-[#01589A] text-white p-2 w-full"
+              className="bg-[#01589A] text-white p-2 w-full mb-2"
             >
               Register
             </button>
