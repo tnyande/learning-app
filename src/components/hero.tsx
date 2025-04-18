@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -23,16 +24,16 @@ const Hero = () => {
                     text-center lg:text-left
                     ">
                         Unlock Your Potential with 
-                        Industry-Leading Courses!
+                        Industry-Leading Courses
                        
                     </h1>
                     <p className="text-white-400 
                     text-lg font-medium text-left
                     lg:text-left leading-relaxed m-6 ml-20 text-white">
-                        "Join thousands of learners gaining real-
+                        Join thousands of learners gaining real-
                         world skills and advancing their careers. Our 
                         expert-led courses are designed to empower 
-                        you to succeed."
+                        you to succeed
                     </p>
                     <button className=" 
                     text-white text-lg b-bold border-1 ml-20
@@ -44,7 +45,7 @@ const Hero = () => {
                 <div className=" bg-[#01589A]
                 w-493 h-381.96 mt-5">
                    
-                    <img
+                    <Image
                         className="mr-20"  
                             
                          src="/laptop-azubi64.svg"
