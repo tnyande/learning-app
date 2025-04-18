@@ -85,7 +85,8 @@ const Invoices = () => {
                             </thead>
                         
                         {InvoiceTrans.slice(0, 10).map((item) => 
-                            <tbody>
+                        <div key={item.id}>
+                            <tbody key={item.id}>
                             <tr key={item.id}>
                                 <td className='px-4 '>{item.firstname} {item.Lastname} </td>
                                 <td className='px-4'>{item.email} </td>
@@ -96,6 +97,7 @@ const Invoices = () => {
                                 <td> <LucideDelete /> </td>
                             </tr>
                             </tbody>
+                            </div>
                        
                     )}
                     </table>
