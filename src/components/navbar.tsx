@@ -1,7 +1,7 @@
 import Link from 'next/link';
 //import Logo from 'learning-app/public/azubi-logo.svg';
 import Image from 'next/image';
-import { SignInButton,UserButton,SignedIn, SignedOut} from '@clerk/nextjs';
+import { UserButton,SignedIn, SignedOut} from '@clerk/nextjs';
 import {  } from '@clerk/nextjs';
 
 const Navbar = () => {

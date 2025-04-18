@@ -1,6 +1,6 @@
-import { LucideAArrowUp, LucideArrowBigRight, LucideArrowRight, LucideSquareArrowRight } from 'lucide-react'
+
 import React from 'react'
-import Link from 'next/link'
+
 
 function NewPassword() {
   return (

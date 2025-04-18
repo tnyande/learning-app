@@ -63,7 +63,7 @@ const Learners = () => {
                             </thead>
                         
                         {LearnersTrans.slice(0, 10).map((item) => 
-                            <tbody>
+                            <tbody key={item.id}>
                             <tr key={item.id}>
                                 <td className='px-4 '>{item.firstname} {item.Lastname} </td>
                                 <td className='px-4'>{item.title} </td>

@@ -98,7 +98,7 @@ const MyBarChart = () => {
                       <div className="flex flex-row">
                           <p className="flex ">{item.title}</p>
                           <div className="ml-36 flex absolute justify-end w-[300px]">
-                            <p >{item.amount}</p> 
+                            <p >{item.amount}</p>
                           </div>
                       </div>
                     </li>

@@ -6,7 +6,7 @@ import Solution from "@/components/solution";
 import Futurecourses from "@/components/futurecourses";
 import RegisterPage from "@/components/registerPage";
 import Footer from "@/components/footer";
-import Registerbackup from "@/components/registerbackup";
+
 
 
 export default function Home() {
