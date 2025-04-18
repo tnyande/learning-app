@@ -7,7 +7,7 @@ function headerInv() {
    
 
     
-    <div className='justify-end absolute w-full h-[54px]'>
+    <div className='justify-end w-full h-[54px]'>
        <div className='w-[191px] h-[54px] flex'>
           <button type='button' className='w-[49px] h-[54px] bg-gray-200 mt-2 '>
             <LucideMoon  className='w-[49px] h-[54px] '/>
