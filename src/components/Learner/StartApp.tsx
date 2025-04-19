@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 
 function StartApp() {
@@ -93,16 +94,16 @@ function StartApp() {
             
   
             {/* Submit Button */}
-            <div>
-            <button
-              type="submit"
-              className="mr-4 bg-[#404040] text-white p-2 w-[147px] h-[48px]"
+            <div className="flex mr-4 bg-[#404040] text-white p-2 w-[147px] h-[48px]">
+            <Link href={"/learner"}
+              className="mr-16 bg-[#404040] text-white p-2 w-[147px] h-[48px]"
+              
             >
-              Register
-            </button>
+             <p>Back</p> 
+            </Link>
             <button
               type="submit"
-              className="bg-[#01589A] text-white p-2 w-[147px] h-[48px]"
+              className="bg-[#01589A] pb-4 text-white p-2 w-[147px] h-[48px] flex inline ml-16 "
             >
               Register
             </button>

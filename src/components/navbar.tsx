@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link href="/" className="mr-4 mt-2 text-lg hover:text-black-400 text-black">
                 Home
             </Link>
-            <Link href="/courses" className="mr-4 mt-2 text-lg hover:text-black-400 text-black">
+            <Link href="/learner" className="mr-4 mt-2 text-lg hover:text-black-400 text-black">
             Courses
             </Link>
         </div>
@@ -55,6 +55,7 @@ const Navbar = () => {
           target='_blank'
           className="text-lg hover:text-gray-400 text-black">
           
+          {/*
           <Image
                 className='border-1 mr-2'
                 src="/button.svg" // path relative to the public folder
@@ -62,9 +63,10 @@ const Navbar = () => {
                 width={125} // width of the logo
                 height={48} // height of the logo
 
-                />
+                > </Image> */}
                 
-          
+          <p className='w-[125px] h-[48px] border-1 bg-[#01589A]'>Login</p>
+
           </Link>
           </div>
           </SignedOut>

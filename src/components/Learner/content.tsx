@@ -71,6 +71,7 @@ function Content() {
                 </div>
                 <div className='flex flex-row w-[424px] h-[48px] gap-2 cursor-pointer ml-64 pl-2 my-12'>
                     <div className='pt-2 inline w-[168px] h-[48px] border-1 bg-[#E6E6E6]  border-gray-400 py-1  text-black px-2'>
+                    <Link href={"/"}>
                         <h6 className='inline ml-8'>Home</h6>
                         <Image 
                           src={"/Chevron-Right.svg"}
@@ -79,6 +80,7 @@ function Content() {
                           height={22}
                           className='inline ml-2'
                          />
+                       </Link>  
                     </div>
                     <div className='pt-2 inline w-[232px] h-[48px] cursor-pointer border-1 bg-[#01589A] border-gray-400 py-1  text-white px-2'>
                         <Link href={"/application"}>

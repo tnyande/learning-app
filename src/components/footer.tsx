@@ -8,7 +8,9 @@ export default function Footer() {
         <div className="container mx-auto flex justify-between items-center">
           {/* Left: Logo */}
           <div className="flex items-center space-x-4 ">
-            <Image src="/azubi-footer.svg" alt="Logo" className="w-385 h-110" />
+            <Image src="/azubi-footer.svg" alt="Logo" 
+            width={385} height={110} 
+            className="w-385 h-110" />
           </div>
   
           {/* Right: Three Columns of Text */}
@@ -45,7 +47,8 @@ export default function Footer() {
           <p>&copy; copyright 2025 - G-client, All rights reserved</p>
           <div className="flex">
           <p >Back to top</p>
-          <Image src="/arrow-up.svg" alt="arrow" className="ml-1 w-4 h-4 mb-4"/>
+          <Image src="/arrow-up.svg" alt="arrow" 
+          width={4} height={4} className="ml-1 w-4 h-4 mb-4"/>
           </div>
           
         </div>

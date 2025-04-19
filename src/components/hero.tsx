@@ -50,7 +50,8 @@ const Hero = () => {
                             
                          src="/laptop-azubi64.svg"
                    
-                        
+                        width={493}
+                        height={381.96}
                         alt="Placeholder"
                     />
                 </div>
